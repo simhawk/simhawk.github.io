@@ -1,0 +1,25 @@
+{
+  "name": "simhawk.github.io",
+  "version": "1.0.0",
+  "description": "[Freelancer](http://startbootstrap.com/template-overviews/freelancer/) is a one page freelancer portfolio theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This theme features several content sections, a responsive portfolio grid with hover effects, full page portfolio item modals, and a working PHP contact form.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "autoless less css & node server.js && fg"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simhawk/simhawk.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simhawk/simhawk.github.io/issues"
+  },
+  "homepage": "https://github.com/simhawk/simhawk.github.io#readme",
+  "dependencies": {
+    "connect": "^3.7.0",
+    "less": "^3.9.0",
+    "serve-static": "^1.14.1"
+  }
+}

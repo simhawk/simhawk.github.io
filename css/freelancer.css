@@ -3,9 +3,18 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
-
+html {
+    min-height: 100%;
+}
 body {
     overflow-x: hidden;
+    background: rgb(131,58,180);
+    background: linear-gradient(343deg, rgba(131,58,180,1) 0%, rgba(29,62,253,1) 40%, rgba(69,216,252,1) 100%) no-repeat center center ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height:100%;
 }
 
 p {
@@ -83,27 +92,33 @@ hr.star-primary:after {
     margin: 0 auto;
 }
 
-header {
-    background: rgba(190, 42, 70, 0.9) url("../img/profile/laptopCode.jpg") center bottom no-repeat;
-    background-size: cover;
+#particle-div  {
+    width:100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+header {   
     text-align: center;
     color: #fff;
     /*background: rgba(190, 42, 70, 0.9);*/
 }
 
 header .container {
+    height:100vh;
     padding-top: 100px;
     padding-bottom: 50px;
 }
 
 header img {
-
     display: block;
     margin: 0 auto 20px;
 }
 
 header .intro-text .name {
     display: block;
+    padding-top: 25vh;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 2em;
@@ -208,6 +223,11 @@ section.success a.active {
     section.first {
         padding-top: 75px;
     }
+}
+
+#portfolio .portfolio-item img {
+    width: auto;
+    height: 600px;
 }
 
 #portfolio .portfolio-item .caption {
