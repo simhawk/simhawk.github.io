@@ -15,6 +15,7 @@ body {
     -o-background-size: cover;
     background-size: cover;
     height:100%;
+    width: 100%;
 }
 
 p {
@@ -497,12 +498,15 @@ footer .footer-below {
 
 
 .portfolio-modal .modal-content {
-    padding: 100px 0;
-    min-height: 100%;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    right: 5%;
+    overflow: scroll;
+    max-height: 80%;
     border: 0;
     border-radius: 0;
-    text-align: center;
-    background-clip: border-box;
+    text-align: left;
     -webkit-box-shadow: none;
     box-shadow: none;
 }
@@ -510,6 +514,7 @@ footer .footer-below {
 .portfolio-modal .modal-content h2 {
     margin: 0;
     font-size: 3em;
+    text-align: center;
 }
 
 .portfolio-modal .modal-content img {
@@ -529,6 +534,7 @@ footer .footer-below {
     height: 75px;
     background-color: transparent;
     cursor: pointer;
+    z-index: 2;
 }
 
 .portfolio-modal .close-modal:hover {
