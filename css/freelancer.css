@@ -3,8 +3,8 @@
  License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
+ 
 html {
-    min-height: 100%;
 }
 body {
     overflow-x: hidden;
@@ -14,9 +14,10 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height:100%;
-    width: 100%;
 }
+
+    
+
 
 p {
     font-size: 20px;
