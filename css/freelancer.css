@@ -97,6 +97,15 @@ hr.star-light {
     z-index: -1;
 }
 
+button.btn-prev {
+    float: left;
+    margin: 10px 0px;
+}
+
+button.btn-next {
+    float: right;
+    margin: 10px 0px;
+}
 header {   
     text-align: center;
     color: #fff;
@@ -280,8 +289,6 @@ section.success a.active {
 
 
 
-
-
 #portfolio .portfolio-item div {
     right: 0;  
     margin: 0px 0px;
@@ -337,6 +344,13 @@ section.success a.active {
 @media(min-width:767px) {
     #portfolio .portfolio-item {
         margin: 0 0 30px;
+    }
+}
+
+
+@media(max-width:768px) {
+    #portfolio .portfolio-item {
+        margin-bottom: 20px;
     }
 }
 
