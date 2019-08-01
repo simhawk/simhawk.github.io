@@ -77,6 +77,14 @@ hr.star-light {
     border-color: #fff;
 }
 
+.cover {
+    object-fit: cover;
+}
+
+.contain {
+    object-fit: contain;
+}
+
 
 .img-centered {
     margin: 0 auto;
@@ -262,49 +270,12 @@ section.success a.active {
 
 
 
-#experience {
-    background-color: #0000;
-}
 
-#experience h2{
-    color: white;
-}
-
-#experience .experience-block {
-    background-color: white;
-    margin-right: 50%;
-    margin-bottom: 15px;
-}
-
-#experience .thumbnail .caption-title{
-    text-align: center;
-}
-
-#experience .thumbnail .caption-title span{
-    font-style: italic;
-    font-size: 0.8em;
-}
-
-#experience .thumbnail .experience-icon{
-    margin-top: 20px;
-}
-
-#experience .thumbnail ul {
-    margin-left: 10px;
-    margin-right:10px;
-    margin-bottom: 20px;
-}
-
-
-#experience .thumbnail li {
-    margin-bottom: 10px;
-    font-size: 1.4em;
-}
 
 
 #portfolio .portfolio-item div {
     right: 0;  
-    margin: 0 0 15px;
+    margin: 0px 0px;
 }
 
 
@@ -319,12 +290,14 @@ section.success a.active {
     width: auto;
     text-align: center;
     position: relative;
+    overflow:hidden;
+    margin-bottom: 5px;
 }
 
 #portfolio .portfolio-item .portfolio-link .thumbnail img {
     width: 100%;
-    height: 400px;
-    object-fit: cover !important;
+    height: 250px !important;
+    object-fit: cover;
 }
 
 #portfolio .portfolio-item .portfolio-link .thumbnail p {
@@ -334,6 +307,7 @@ section.success a.active {
 #portfolio .portfolio-item .portfolio-link .thumbnail:hover img {
     opacity: 0.15!important;
 }
+
 
 #portfolio .portfolio-item .portfolio-link .thumbnail:hover p {
     display: inline;
@@ -565,4 +539,76 @@ footer .footer-below {
 .portfolio-modal .modal-backdrop {
     display: none;
     opacity: 0;
+}
+
+#experience {
+    background-color: #0000;
+}
+
+#experience h2{
+    color: white;
+}
+
+#experience .experience-block {
+    background-color: white;
+    margin-right: 50%;
+    margin-bottom: 15px;
+}
+
+#experience .job-card .caption-title{
+    text-align: center;
+}
+
+#experience .job-card .caption-title span{
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+#experience .job-card .experience-icon{
+    margin-top: 20px;
+}
+
+#experience .job-card ul {
+    margin-left: 10px;
+    margin-right:10px;
+    margin-bottom: 20px;
+}
+
+#experience .job-card li {
+    margin-bottom: 10px;
+    font-size: 1.4em;
+}
+
+.job-card {
+    height: 500px;
+}
+
+@media(max-width:1600px) {
+    .job-card {
+        height: 690px;
+    }
+}
+
+@media(max-width:1200px) {
+    .job-card {
+        height: 680px;
+    }
+}
+
+@media(max-width:992px) {
+    .job-card {
+        height: 690px;
+    }
+}
+
+@media(max-width:768px) {
+    .job-card {
+        height: 620px;
+    }
+}
+
+.job-card img {
+    min-height: 120px;
+    max-height: 20%;
+    object-fit: contain;
 }
