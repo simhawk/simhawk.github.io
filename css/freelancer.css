@@ -104,9 +104,11 @@ header {
     
 }
 
-header img {
-    display: block;
-    margin: 0 auto 20px;
+header img.logo {
+    margin: 10px 15px;
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
 }
 
 header .container {
@@ -147,8 +149,15 @@ header .intro-text .skills {
     }
 
     header .intro-text .skills {
-        font-size: 1.75em;
+        font-size: 1.95em;
     }
+}
+
+header #header-subtext {
+    font-size:1.45em;
+    font-weight:300;
+    margin:10px auto;
+    width: 50vw;
 }
 
 .title {
