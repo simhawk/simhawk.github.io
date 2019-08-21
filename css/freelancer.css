@@ -508,6 +508,11 @@ footer .footer-below {
     box-shadow: none;
 }
 
+.portfolio-modal .modal-content a{
+    display: inline;
+    color: blue;
+}
+
 .portfolio-modal .modal-content h2 {
     margin: 0;
     font-size: 3em;
@@ -521,7 +526,7 @@ footer .footer-below {
 .portfolio-modal .modal-content img {
     
     margin: 20px auto;
-    width: 100%;
+    width: 60%;
 }
 
 .portfolio-modal .modal-content .item-details {
@@ -570,6 +575,11 @@ footer .footer-below {
     display: none;
     opacity: 0;
 }
+
+
+
+
+
 
 #experience {
     background-color: #0000;
