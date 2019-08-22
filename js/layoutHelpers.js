@@ -13,6 +13,10 @@ $(document).ready(function() {
         }
     }
 
+    if(window.location.href.indexOf('#digi') != -1) {
+        $("#portfolioModal1").modal('show');
+    }
+
     if(window.location.href.indexOf('#UAV') != -1) {
         $("#portfolioModal5").modal('show');
     }
