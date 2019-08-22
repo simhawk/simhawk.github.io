@@ -32,6 +32,11 @@ $(document).ready(function() {
     
     /* Onclicks */
     $('.btn-prev').on('click', function(event) {
+
+        //close modal
+        $('.modal').modal('hide');
+        $('.modal-backdrop').remove()
+
         var modal = $(this).parents().eq(5);
         var modalID = modal.attr('id')
         var numberText = modalID.split("portfolioModal")[1];
@@ -39,12 +44,15 @@ $(document).ready(function() {
         var newNum = (number-1).mod(18);
         var newModalID = '#portfolioModal' + (newNum+1);
 
-        //close then open
-        $('#'+modalID).modal('toggle');
         $(newModalID).modal('show');
     });
 
     $('.btn-next').on('click', function(event) {
+
+        //cloase modal
+        $('.modal').modal('hide');
+        $('.modal-backdrop').remove()
+
         var modal = $(this).parents().eq(5);
         var modalID = modal.attr('id')
         var numberText = modalID.split("portfolioModal")[1];
@@ -53,7 +61,6 @@ $(document).ready(function() {
         var newModalID = '#portfolioModal' + (newNum+1);
 
         //close then open
-        $('#'+modalID).modal('toggle');
         $(newModalID).modal('show');
     });
     
