@@ -509,6 +509,12 @@ footer .footer-below {
     box-shadow: none;
 }
 
+.portfolio-modal .modal-content h2 {
+    margin: 0;
+    font-size: 3em;
+    text-align: center;
+}
+
 @media(max-width:1000px) {
     .portfolio-modal .modal-content {
         position: absolute;
@@ -523,6 +529,17 @@ footer .footer-below {
         -webkit-box-shadow: none;
         box-shadow: none;
     }
+    
+    .portfolio-modal .modal-content h2 {
+        margin: 0;
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .portfolio-modal .modal-content p {
+        font-size: 1em;
+    }
+
 }
 
 .portfolio-modal .modal-content a{
@@ -530,11 +547,7 @@ footer .footer-below {
     color: blue;
 }
 
-.portfolio-modal .modal-content h2 {
-    margin: 0;
-    font-size: 3em;
-    text-align: center;
-}
+
 .portfolio-modal .container {
     padding: 0px;
     width:100%;
@@ -627,7 +640,7 @@ footer .footer-below {
     text-align: center;
 }
 
-#experience .job-card .caption-title span{
+#experience .job-card .caption-title span {
     font-style: italic;
     font-size: 0.8em;
 }
@@ -653,25 +666,56 @@ footer .footer-below {
 
 @media(max-width:1600px) {
     .job-card {
-        height: 790px;
+        height: 520px;
+    }
+
+    #experience .job-card li {
+        margin-bottom: 10px;
+        font-size: 1em;
     }
 }
 
 @media(max-width:1200px) {
     .job-card {
-        height: 780px;
+        height: 520px;
+    }
+
+    #experience .job-card li {
+        margin-bottom: 10px;
+        font-size: 1em;
     }
 }
 
 @media(max-width:992px) {
     .job-card {
-        height: 790px;
+        height: 500px;
+    }
+
+    #experience .job-card li {
+        margin-bottom: 10px;
+        font-size: 1em;
     }
 }
 
 @media(max-width:768px) {
     .job-card {
-        height: 720px;
+        height: 500px;
+    }
+
+    #experience .job-card li {
+        margin-bottom: 10px;
+        font-size: 1em;
+    }
+}
+
+@media(max-width:450px) {
+    .job-card {
+        height: 600px;
+    }
+
+    #experience .job-card li {
+        margin-bottom: 10px;
+        font-size: 1em;
     }
 }
 
