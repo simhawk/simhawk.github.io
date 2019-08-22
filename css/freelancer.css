@@ -100,12 +100,15 @@ hr.star-light {
 button.btn-prev {
     float: left;
     margin: 10px 0px;
+    transform:translate(0%, -110%);
 }
 
 button.btn-next {
     float: right;
-    margin: 10px 0px;
+    margin: 10px 10px;
+    transform:translate(0%, -110%);
 }
+
 header {   
     text-align: center;
     color: #fff;
